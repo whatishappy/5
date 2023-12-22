@@ -1,0 +1,16 @@
+int main()
+{
+	float data1,data2,result;
+	char op;
+	scanf("%d%c%d",&data1,&op,&data2);
+	printf("Type your expression.\n");
+	switch(op)
+	{
+		case '+':printf("%f\n",data1+data2);break;
+		case '-':printf("%f\n",data1-data2);break;
+		case '*':printf("%f\n",data1*data2);break;
+		case '/':if(data2==0){printf("data2 must not be zero!\n");}result=data1/data2;break;
+		
+	}
+	printf("The result is %f%c%f=%f",data1,op,data2);
+}
